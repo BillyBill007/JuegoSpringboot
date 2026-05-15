@@ -30,8 +30,8 @@ public class JuegoServiceTest {
     void setUp() {
         juego = new Juego();
         juego.setId(2L);
-        juego.setNombre("The Legend of Zelda");
-        juego.setEmpresa("Nintendo");
+        juego.setNombre("Elda");
+        juego.setEmpresa("Mojang");
         juego.setLanzamiento(2017);
         juego.setValoracion(9.8);
     }

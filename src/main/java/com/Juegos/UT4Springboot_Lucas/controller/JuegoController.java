@@ -19,7 +19,7 @@ public class JuegoController {
         return service.guardarJuego(game);
     }
 
-    // Endpoint para listar (GET: http://localhost:8080/api/estudiantes)
+    // Endpoint para listar (GET: http://localhost:8080/api/juegos)
     @GetMapping
     public List<Juego> listarTodos() {
         return service.obtenerTodos();

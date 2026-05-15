@@ -30,8 +30,8 @@ public class JuegoServiceTest {
     void setUp() {
         juego = new Juego();
         juego.setId(2L);
-        juego.setNombre("The Legend of Zelda");
-        juego.setEmpresa("Nintendo");
+        juego.setNombre("Minecraft");
+        juego.setEmpresa("Mojang");
         juego.setLanzamiento(2017);
         juego.setValoracion(9.8);
     }
@@ -41,7 +41,7 @@ public class JuegoServiceTest {
         when(repository.save(any(Juego.class))).thenReturn(juego);
         Juego  guardado = service.guardarJuego(new  Juego());
         assertNotNull(guardado);
-        assertEquals("The Legend of Zelda", guardado.getNombre());
+        assertEquals("Minecraft", guardado.getNombre());
         verify(repository, times(1)).save(any(Juego.class));
     }
 
